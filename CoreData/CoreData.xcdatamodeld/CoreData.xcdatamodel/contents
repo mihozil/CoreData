@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15C50" minimumToolsVersion="Automatic">
+    <entity name="Pic" representedClassName="Pic" syncable="YES">
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="picDetails" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PicDetails" inverseName="pic" inverseEntity="PicDetails" syncable="YES"/>
+    </entity>
+    <entity name="PicDetails" representedClassName="PicDetails" syncable="YES">
+        <attribute name="details" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rating" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="pic" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pic" inverseName="picDetails" inverseEntity="Pic" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Pic" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="PicDetails" positionX="-54" positionY="0" width="128" height="105"/>
+    </elements>
+</model>

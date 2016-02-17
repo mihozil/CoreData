@@ -1,0 +1,26 @@
+//
+//  PrefixHeader.pch
+//  CoreData
+//
+//  Created by Apple on 2/16/16.
+//  Copyright © 2016 AMOSC. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <Availability.h>
+#import <UIKit/UIKit.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#define MR_SHORTHAND
+#import "CoreData+MagicalRecord.h"
+#endif
+#endif /* PrefixHeader_pch */
+

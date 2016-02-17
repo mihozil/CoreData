@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewItem">
+            <connections>
+                <outlet property="detailField" destination="UMX-7p-Rfz" id="ICF-o4-YMs"/>
+                <outlet property="imgView" destination="8jx-AI-kJP" id="Cfv-Yk-Kqi"/>
+                <outlet property="rateView" destination="Dgg-LN-442" id="xqm-N1-nke"/>
+                <outlet property="titleField" destination="dk9-91-Yvh" id="E3R-Hf-gnB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="peach.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8jx-AI-kJP">
+                    <rect key="frame" x="0.0" y="0.0" width="133" height="144"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="133" id="0H0-Wo-c4r"/>
+                        <constraint firstAttribute="height" constant="144" id="Nv0-Fi-tct"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dk9-91-Yvh">
+                    <rect key="frame" x="153" y="33" width="147" height="30"/>
+                    <color key="backgroundColor" red="0.7805267038" green="0.77114422270000005" blue="0.79309823899999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UMX-7p-Rfz">
+                    <rect key="frame" x="20" y="175" width="280" height="30"/>
+                    <color key="backgroundColor" red="0.7805267038" green="0.77114422270000005" blue="0.79309823899999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dgg-LN-442" customClass="RateView">
+                    <rect key="frame" x="137" y="83" width="179" height="61"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Dgg-LN-442" secondAttribute="height" multiplier="179:61" id="0kZ-rZ-rhS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Dgg-LN-442" firstAttribute="top" secondItem="dk9-91-Yvh" secondAttribute="bottom" constant="20" id="6At-rR-OVa"/>
+                <constraint firstItem="UMX-7p-Rfz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="84i-Iw-rqL"/>
+                <constraint firstAttribute="trailing" secondItem="UMX-7p-Rfz" secondAttribute="trailing" constant="20" id="CeX-kj-NMd"/>
+                <constraint firstItem="dk9-91-Yvh" firstAttribute="leading" secondItem="8jx-AI-kJP" secondAttribute="trailing" constant="20" id="ECh-cV-xYK"/>
+                <constraint firstItem="dk9-91-Yvh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="33" id="Ofc-rJ-kJA"/>
+                <constraint firstAttribute="trailing" secondItem="dk9-91-Yvh" secondAttribute="trailing" constant="20" id="Uwb-9t-QPi"/>
+                <constraint firstAttribute="trailing" secondItem="Dgg-LN-442" secondAttribute="trailing" constant="4" id="WKi-4Z-e4q"/>
+                <constraint firstItem="8jx-AI-kJP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fDj-4W-hRz"/>
+                <constraint firstItem="8jx-AI-kJP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nB0-2a-MEb"/>
+                <constraint firstItem="Dgg-LN-442" firstAttribute="leading" secondItem="8jx-AI-kJP" secondAttribute="trailing" constant="4" id="pQX-It-6fn"/>
+                <constraint firstItem="UMX-7p-Rfz" firstAttribute="top" secondItem="8jx-AI-kJP" secondAttribute="bottom" constant="31" id="s1s-4P-u66"/>
+                <constraint firstItem="UMX-7p-Rfz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xuc-pz-DUc"/>
+            </constraints>
+            <point key="canvasLocation" x="323" y="307"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="peach.jpg" width="960" height="720"/>
+    </resources>
+</document>
